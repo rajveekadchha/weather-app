@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Box, ThemeProvider } from "@mui/material";
+import dashboardBackground from "./assets/dashboardBackground.webp";
+import Dashboard from "./components/Dashboard";
+import appTheme from "./theme";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={appTheme}>
+      <div className="App">
+        <Box
+          sx={{
+            backgroundImage: `url(${dashboardBackground})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
+            width: "100vw",
+            height: "100vh",
+            overflow: "hidden",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Dashboard />
+        </Box>
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,0 +1,15 @@
+.dateStyle {
+    background: #0000004a;
+    color: white !important;
+    padding: 8px 16px !important;
+    margin: 8px 20px !important;
+}
+
+.dateStyleSmall {
+    background: #0000004a;
+    color: white !important;
+    padding: unset;
+    margin: unset;
+    /* padding: 8px 16px !important; */
+    /* margin: 8px 20px !important; */
+}
