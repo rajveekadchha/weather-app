@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_KEY = "8ff6b1c427824112b02b9f92f1485bbb";
+const API_KEY = "94c685d967b1435e809178941442ca0f";
 
 export const getWeatherData = (city, today_date, end_date) => {
   return axios.get("https://api.weatherbit.io/v2.0/history/energy", {
